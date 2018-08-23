@@ -1,0 +1,21 @@
+> #1
+> X~binom (size=31, probability=0.447)
+X ~ binom(size = 31, probability = 0.447)
+> #a
+> dbinom(17,size=31,prob=0.447)
+[1] 0.07532248
+> #b
+> pbinom(13, size=31,prob=0.447)
+[1] 0.451357
+> #c
+> pbinom(11, size=31,prob=0.447, lower.tail = FALSE)
+[1] 0.8020339
+> #d
+> pbinom(14, size=31,prob=0.447, lower.tail=FALSE)
+[1] 0.406024
+> #e
+> sum(dbinom(16:19, size=31,prob=0.447))
+[1] 0.2544758
+> diff(pbinom(c(19,15),size=31,prob=0.447, lower.tail = FALSE))
+[1] 0.2544758
+>
